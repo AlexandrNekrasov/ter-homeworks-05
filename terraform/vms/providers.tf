@@ -6,7 +6,6 @@ terraform {
     key    = "terraform.tfstate"
     region = "ru-central1"
 
-    # Встроенный механизм блокировок (Terraform >= 1.6)
     use_lockfile = true
 
     endpoints = {
@@ -21,10 +20,16 @@ terraform {
 
   required_providers {
     yandex = {
-      source = "yandex-cloud/yandex"
+      source  = "yandex-cloud/yandex"
+      version = ">= 0.100.0"
     }
     local = {
-      source = "hashicorp/local"
+      source  = "hashicorp/local"
+      version = ">= 2.0.0"
+    }
+    template = {
+      source  = "hashicorp/template"
+      version = ">= 2.0.0"
     }
   }
 }
