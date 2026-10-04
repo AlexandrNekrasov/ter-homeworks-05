@@ -1,0 +1,37 @@
+# Демо-репозиторий Netology (не коммитить)
+ter-homeworks/
+
+# Бинарник tflint
+tflint
+tflint_linux_amd64.zip
+
+# Terraform
+**/.terraform/*
+.terraform*
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+
+# Sensitive files
+personal.auto.tfvars
+terraform.tfvars
+*.auto.tfvars
+!*.auto.tfvars.example
+!*.tfvars_example
+
+# Ansible
+inventory.ini
+*.cfg
+
+# SSH keys
+*.pem
+*.key
+*.json
+
+# IDE
+.idea/
+.vscode/
+
+# terraform-docs
+terraform-docs
+terraform-docs.tar.gz
